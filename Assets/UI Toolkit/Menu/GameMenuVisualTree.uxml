@@ -1,4 +1,18 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="NavBar" src="project://database/Assets/UI%20Toolkit/Components/NavBar/NavBar.uxml?fileID=9197481963319205126&amp;guid=4f2d758dbe8b249d2ae539bcb996c852&amp;type=3#NavBar" />
+    <engine:Template name="ItemCategoryBar" src="project://database/Assets/UI%20Toolkit/Components/CategoryBar/ItemCategoryBar.uxml?fileID=9197481963319205126&amp;guid=ccc6ab953a2aa4545961d0ee04348192&amp;type=3#ItemCategoryBar" />
+    <engine:Template name="ShopItem" src="project://database/Assets/UI%20Toolkit/Components/ShopItem/ShopItem.uxml?fileID=9197481963319205126&amp;guid=111032c12a7ef4c8a817f38e90281a63&amp;type=3#ShopItem" />
+    <engine:Template name="ShopToolbar" src="project://database/Assets/UI%20Toolkit/Components/Toolbar/ShopToolbar.uxml?fileID=9197481963319205126&amp;guid=6fc863ad040d44115ad0ee6a74163608&amp;type=3#ShopToolbar" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/GameMenuStyle.uss?fileID=7433441132597879392&amp;guid=dd7984154c16f43d0a312c2a14bf44ad&amp;type=3#GameMenuStyle" />
-    <engine:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_BG.png?fileID=2800000&amp;guid=89f2bce445a9142caaeec6ea6667f772&amp;type=3#img_BG&quot;);" />
+    <engine:VisualElement name="Container" class="gameMenu" style="flex-grow: 1;">
+        <engine:Instance template="NavBar" name="NavBarContainer" />
+        <engine:Instance template="ItemCategoryBar" name="CategoryBarContainer" style="width: 250px; height: 93px;" />
+        <engine:VisualElement name="ItemsContainer" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: center; justify-content: space-evenly; height: 588px; width: 1920px;">
+            <engine:Instance template="ShopItem" name="ShopItem_1" style="width: 434px; height: 588px;" />
+            <engine:Instance template="ShopItem" name="ShopItem_2" style="width: 434px; height: 588px;" />
+            <engine:Instance template="ShopItem" name="ShopItem_3" style="width: 434px; height: 588px;" />
+            <engine:Instance template="ShopItem" name="ShopItem_4" style="width: 434px; height: 588px;" />
+        </engine:VisualElement>
+        <engine:Instance template="ShopToolbar" name="ToolbarContainer" style="width: 1424px; height: 150px; align-items: stretch; align-self: center;" />
+    </engine:VisualElement>
 </engine:UXML>

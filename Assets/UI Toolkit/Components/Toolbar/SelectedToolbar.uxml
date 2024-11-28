@@ -1,7 +1,7 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardRectangle.uss?fileID=7433441132597879392&amp;guid=187ca3be01f974d3fa9d10255d9897ad&amp;type=3#StandardRectangle" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
-    <engine:VisualElement name="Container" class="roundedSquareOutline roundedOutline" style="flex-grow: 1;">
+    <engine:VisualElement name="Container" class="roundedSquareOutline roundedOutline" style="flex-grow: 1; border-bottom-color: rgba(0, 0, 0, 0); border-bottom-width: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
         <engine:Label text="CARS" name="txt_option" class="toolbarLabel" style="color: rgb(35, 252, 30);" />
     </engine:VisualElement>
 </engine:UXML>

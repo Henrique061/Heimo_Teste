@@ -1,8 +1,8 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <engine:Template name="SelectedToolbar" src="project://database/Assets/UI%20Toolkit/Components/Toolbar/SelectedToolbar.uxml?fileID=9197481963319205126&amp;guid=b0404982b8ce14e10b9b3304eff248a8&amp;type=3#SelectedToolbar" />
     <engine:Template name="FreeNotification" src="project://database/Assets/UI%20Toolkit/Components/Toolbar/FreeNotification.uxml?fileID=9197481963319205126&amp;guid=fbe7e48d67fa04eefaecb0d4f02fa803&amp;type=3#FreeNotification" />
-    <Style src="project://database/Assets/UI%20Toolkit/ShopToolbarStyle.uss?fileID=7433441132597879392&amp;guid=ac0341a331e454123af513738eb88b5e&amp;type=3#ShopToolbarStyle" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/ShopToolbarStyle.uss?fileID=7433441132597879392&amp;guid=d2bea2e40316648118ce951594e45506&amp;type=3#ShopToolbarStyle" />
     <engine:VisualElement name="Container" style="flex-grow: 1;">
         <engine:VisualElement name="ToolbarContainer" class="shopToolbar" style="flex-grow: 1;">
             <engine:VisualElement name="TextsContainer" style="flex-direction: row; justify-content: space-evenly; width: 1407px;">
@@ -13,7 +13,7 @@
                 <engine:Label text="GEMS" name="txt_gems" class="centerWhiteLabel toolbarLabel" />
             </engine:VisualElement>
         </engine:VisualElement>
-        <engine:Instance template="SelectedToolbar" name="SelectedOption" style="height: 168px; width: 183px; min-height: 168px; margin-left: 343px; opacity: 1; margin-bottom: -130px;" />
-        <engine:Instance template="FreeNotification" name="FreeNotification" style="width: 84px; height: 35px; max-height: none; min-height: 35px; margin-left: 227px;" />
+        <engine:Instance template="SelectedToolbar" name="SelectedOption" style="height: 150px; width: 183px; min-height: 143px; margin-left: 0; opacity: 1; margin-bottom: 0; right: -343px; bottom: -7px;" />
+        <engine:Instance template="FreeNotification" name="FreeNotification" style="width: 84px; height: 35px; max-height: none; min-height: 35px; margin-left: 0; top: -106px; right: -223px;" />
     </engine:VisualElement>
 </engine:UXML>
