@@ -1,0 +1,18 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="MonetaryInfo" src="project://database/Assets/UI%20Toolkit/Components/NavBar/MonetaryInfo.uxml?fileID=9197481963319205126&amp;guid=eaa0c7bfed9fd44d29c5e4876a8c74eb&amp;type=3#MonetaryInfo" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardButton.uss?fileID=7433441132597879392&amp;guid=cc1d4c0944ca24937acb08fb5dc85822&amp;type=3#StandardButton" />
+    <engine:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_navBarBG.png?fileID=2800000&amp;guid=ad4f4d1bc32cf4173b453be4be12f1e9&amp;type=3#img_navBarBG&quot;); flex-direction: row; justify-content: flex-start; align-items: stretch; align-content: auto;">
+        <engine:VisualElement name="LeftItemsContainer" style="flex-grow: 1; background-color: rgba(255, 0, 0, 0); align-items: center; flex-direction: row; margin-bottom: 12px;">
+            <engine:Button text="Button" name="btn_backButton" class="imageButton" style="width: 29.6px; height: 46.33px; margin-left: 36px; background-image: url(&quot;project://database/Assets/UI/Images/img_backIcon.png?fileID=2800000&amp;guid=828d4e713fc0444169538f3a97414edb&amp;type=3#img_backIcon&quot;);" />
+            <engine:Label text="SHOP" name="txt_menuName" class="centerWhiteLabel toolbarLabel" style="margin-left: 40px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="RightItemsContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center; flex-direction: row-reverse; margin-bottom: 12px;">
+            <engine:Button text="Button" name="btn_backButton" class="imageButton" style="font-size: 0; background-image: url(&quot;project://database/Assets/UI/Images/img_homeIcon.png?fileID=2800000&amp;guid=171a74efaa2624326ae81b885b44c788&amp;type=3#img_homeIcon&quot;); width: 53px; height: 46px; margin-left: 52px; margin-right: 44px;" />
+            <engine:VisualElement name="CurrencyContainer" style="flex-grow: 1; align-items: stretch; flex-direction: row-reverse;">
+                <engine:Instance template="MonetaryInfo" name="GoldContainer" style="height: 50px; margin-left: 20px;" />
+                <engine:Instance template="MonetaryInfo" name="TicketContainer" style="height: 50px;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

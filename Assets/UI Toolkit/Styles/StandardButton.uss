@@ -1,0 +1,6 @@
+.imageButton {
+    font-size: 0;
+    background-image: url("project://database/Assets/UI/Images/img_homeIcon.png?fileID=2800000&guid=171a74efaa2624326ae81b885b44c788&type=3#img_homeIcon");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}

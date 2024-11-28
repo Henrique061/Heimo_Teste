@@ -1,4 +1,4 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Styles/GameMenuStyle.uss?fileID=7433441132597879392&amp;guid=dd7984154c16f43d0a312c2a14bf44ad&amp;type=3#GameMenuStyle" />
-    <engine:VisualElement name="ShopPartsContainer" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_BG.png?fileID=2800000&amp;guid=89f2bce445a9142caaeec6ea6667f772&amp;type=3#img_BG&quot;);" />
+    <engine:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_BG.png?fileID=2800000&amp;guid=89f2bce445a9142caaeec6ea6667f772&amp;type=3#img_BG&quot;);" />
 </engine:UXML>

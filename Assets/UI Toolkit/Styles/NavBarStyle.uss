@@ -1,0 +1,18 @@
+.plusCurrencyButton {
+    font-size: 0;
+    background-color: rgb(22, 235, 81);
+    -unity-background-image-tint-color: rgba(22, 235, 81, 0);
+    width: 36px;
+    height: 36px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 3px;
+    border-left-width: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-color: rgb(7, 118, 38);
+    border-left-color: rgb(7, 118, 38);
+    border-right-color: rgb(7, 118, 38);
+}
