@@ -6,9 +6,9 @@
     <Style src="project://database/Assets/UI%20Toolkit/Styles/ShopItemStyle.uss?fileID=7433441132597879392&amp;guid=1ee051c8e29a641dbbe5152697a5e56f&amp;type=3#ShopItemStyle" />
     <engine:VisualElement name="Container" class="shopItem" style="align-content: flex-start; height: 567px; justify-content: center; align-items: stretch; align-self: stretch; bottom: 0; top: auto; position: absolute; right: 0; left: 0;">
         <engine:Instance template="ItemOfferTime" name="OfferTimer" style="width: 179px; height: 42.1px; align-items: center; align-self: flex-end; margin-top: -20px; justify-content: flex-start;" />
-        <engine:VisualElement name="RarityInfoContainer" style="flex-grow: 1; flex-direction: row; align-items: center; max-height: 59px; margin-top: 8px;">
+        <engine:VisualElement name="RarityInfoContainer" style="flex-grow: 1; flex-direction: row; align-items: center; max-height: 59px; margin-top: 8px; justify-content: space-between;">
             <engine:Instance template="ItemRarityWithTxtIcon" name="RarityWithIcon" />
-            <engine:Instance template="ItemInfoButton" name="Info" style="padding-left: 149px;" />
+            <engine:Instance template="ItemInfoButton" name="Info" style="padding-left: 0; padding-right: 22px;" />
         </engine:VisualElement>
         <engine:VisualElement name="ItemContainer" style="flex-grow: 1; width: 420px; height: 402.77px; align-self: center; align-items: stretch; justify-content: center; align-content: center;">
             <engine:VisualElement name="img_itemGlow" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_itemGlow.png?fileID=2800000&amp;guid=6b0e5bc0c2ff34c6087f765686137d0c&amp;type=3#img_itemGlow&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.18); width: auto; align-items: stretch; align-content: auto;">

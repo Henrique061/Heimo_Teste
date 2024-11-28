@@ -181,6 +181,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1929517630}
+  - {fileID: 1810832406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &488513391
@@ -441,6 +442,81 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &1810832405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810832406}
+  - component: {fileID: 1810832407}
+  m_Layer: 0
+  m_Name: UIControllers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1810832406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810832405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 251814201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1810832407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810832405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd82a2315fa4426a86b005571537ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootDocument: {fileID: 1929517631}
+  shopItems:
+  - ItemRarity: 2
+    BackgroundColor: {r: 0, g: 0.7764706, b: 1, a: 1}
+    InfoColor: {r: 0.003921569, g: 0.47843137, b: 1, a: 1}
+    CarImage: {fileID: 2800000, guid: 7095270f3653f49e3aefa4ecddf38c83, type: 3}
+    OfferDuration: {x: 20, y: 9, z: 50}
+    Price: 427
+  - ItemRarity: 3
+    BackgroundColor: {r: 0, g: 0.92156863, b: 0.5647059, a: 1}
+    InfoColor: {r: 0, g: 0.4509804, b: 0.4509804, a: 1}
+    CarImage: {fileID: 2800000, guid: 4a4572483b34742d4997b6d30a405fed, type: 3}
+    OfferDuration: {x: 22, y: 17, z: 30}
+    Price: 7777
+  - ItemRarity: 1
+    BackgroundColor: {r: 0.92156863, g: 0.63529414, b: 0.08627451, a: 1}
+    InfoColor: {r: 0.6156863, g: 0.2627451, b: 0.003921569, a: 1}
+    CarImage: {fileID: 2800000, guid: 1c6c464996a9b4987b7b14163a8e69ab, type: 3}
+    OfferDuration: {x: 8, y: 25, z: 5}
+    Price: 89.52
+  - ItemRarity: 0
+    BackgroundColor: {r: 0.32156864, g: 0.14117648, b: 0.8392157, a: 1}
+    InfoColor: {r: 0.15294118, g: 0.047058824, b: 0.44705883, a: 1}
+    CarImage: {fileID: 2800000, guid: 491bcd87a287a4385a899a7ce6a9424a, type: 3}
+    OfferDuration: {x: 1, y: 23, z: 59}
+    Price: 0.002
+  commonWidth: 160
+  rareWidth: 136
+  epicWidth: 136
+  legendaryWidth: 210
+  noIconLeftPosition: -20
 --- !u!1 &1929517629
 GameObject:
   m_ObjectHideFlags: 0

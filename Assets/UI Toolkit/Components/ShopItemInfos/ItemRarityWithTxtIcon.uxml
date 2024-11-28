@@ -1,8 +1,8 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/ItemRarityWithTxt.uss?fileID=7433441132597879392&amp;guid=31a4f2f89de6045f8ae6b460f7a09a39&amp;type=3#ItemRarityWithTxt" />
-    <engine:VisualElement name="Container" class="itemRarity" style="flex-grow: 1;">
+    <engine:VisualElement name="RarityContainer" class="itemRarity" style="flex-grow: 1;">
         <engine:VisualElement name="img_RarityIcon" style="flex-grow: 1; max-width: 36px; max-height: 36px; width: 36px; height: 36px; align-items: center; justify-content: center; align-self: center; align-content: center; background-image: url(&quot;project://database/Assets/UI/Images/img_rarity-fire.png?fileID=2800000&amp;guid=4c455d5dc04d644aa810c536369ebed8&amp;type=3#img_rarity-fire&quot;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
-        <engine:Label text="Label" name="txt_Label" class="centerWhiteLabel" />
+        <engine:Label text="Label" name="txt_RarityLabel" class="centerWhiteLabel" />
     </engine:VisualElement>
 </engine:UXML>

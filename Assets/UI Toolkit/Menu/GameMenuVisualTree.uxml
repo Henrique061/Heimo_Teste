@@ -6,12 +6,12 @@
     <Style src="project://database/Assets/UI%20Toolkit/Styles/GameMenuStyle.uss?fileID=7433441132597879392&amp;guid=dd7984154c16f43d0a312c2a14bf44ad&amp;type=3#GameMenuStyle" />
     <engine:VisualElement name="Container" class="gameMenu" style="flex-grow: 1;">
         <engine:Instance template="NavBar" name="NavBarContainer" />
-        <engine:Instance template="ItemCategoryBar" name="CategoryBarContainer" style="width: 250px; height: 93px;" />
+        <engine:Instance template="ItemCategoryBar" name="CategoryBarContainer" style="width: 250px; height: 93px; margin-top: 36px;" />
         <engine:VisualElement name="ItemsContainer" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: center; justify-content: space-evenly; height: 588px; width: 1920px;">
+            <engine:Instance template="ShopItem" name="ShopItem_0" style="width: 434px; height: 588px;" />
             <engine:Instance template="ShopItem" name="ShopItem_1" style="width: 434px; height: 588px;" />
             <engine:Instance template="ShopItem" name="ShopItem_2" style="width: 434px; height: 588px;" />
             <engine:Instance template="ShopItem" name="ShopItem_3" style="width: 434px; height: 588px;" />
-            <engine:Instance template="ShopItem" name="ShopItem_4" style="width: 434px; height: 588px;" />
         </engine:VisualElement>
         <engine:Instance template="ShopToolbar" name="ToolbarContainer" style="width: 1424px; height: 150px; align-items: stretch; align-self: center;" />
     </engine:VisualElement>
