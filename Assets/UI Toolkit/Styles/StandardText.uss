@@ -4,3 +4,12 @@
     -unity-text-align: middle-center;
     font-size: 28px;
 }
+
+.toolbarLabel {
+    -unity-font-definition: url("project://database/Assets/Fonts/Rajdhani/Rajdhani-Bold.ttf?fileID=12800000&guid=95186beaf749447b8a938bbfae4c4f47&type=3#Rajdhani-Bold");
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    font-size: 60px;
+    -unity-text-outline-width: 3px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}

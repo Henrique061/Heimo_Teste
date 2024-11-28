@@ -1,4 +1,4 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/Styles/ShopButtonTextStyle.uss?fileID=7433441132597879392&amp;guid=a7d523526220141adbf55807ac90cc22&amp;type=3#ShopButtonTextStyle" />
-    <engine:Label text="0.002" name="lbl_Text" class="text" style="align-self: center; -unity-text-align: middle-center; -unity-text-outline-width: 3px;" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
+    <engine:Label text="0.002" name="lbl_Text" class="toolbarLabel" style="align-self: center; -unity-text-align: middle-center; -unity-text-outline-width: 3px; font-size: 56px;" />
 </engine:UXML>
