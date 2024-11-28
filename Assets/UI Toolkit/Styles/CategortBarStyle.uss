@@ -1,0 +1,16 @@
+.categoryBar {
+    flex-direction: row;
+    background-color: rgb(0, 71, 255);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: -2px;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 110px;
+    justify-content: center;
+    align-items: center;
+}

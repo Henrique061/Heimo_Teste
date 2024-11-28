@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/CategortBarStyle.uss?fileID=7433441132597879392&amp;guid=6faec6216ee964f7a8a485cf533e40c0&amp;type=3#CategortBarStyle" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
+    <engine:VisualElement name="Container" class="categoryBar" style="flex-grow: 1;">
+        <engine:Label text="CARS" class="toolbarLabel" style="font-size: 51px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); text-shadow: 2px 3px 0 rgb(0, 0, 0); left: -19px;" />
+    </engine:VisualElement>
+</engine:UXML>
