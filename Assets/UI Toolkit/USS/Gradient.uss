@@ -1,7 +1,0 @@
-.gradient {
-    width: 200px;
-    height: 50px;
-    background-image: linear-gradient(90deg, #FF5733, #33FFCE); /* Gradiente de laranja para ciano */
-    border-radius: 10px; /* Opcional: bordas arredondadas */
-    border-width: 0px;
-}

@@ -451,7 +451,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810832406}
+  - component: {fileID: 1810832409}
   - component: {fileID: 1810832407}
+  - component: {fileID: 1810832408}
   m_Layer: 0
   m_Name: UIControllers
   m_TagString: Untagged
@@ -486,7 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd82a2315fa4426a86b005571537ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootDocument: {fileID: 1929517631}
   shopItems:
   - ItemRarity: 2
     BackgroundColor: {r: 0, g: 0.7764706, b: 1, a: 1}
@@ -517,6 +518,35 @@ MonoBehaviour:
   epicWidth: 136
   legendaryWidth: 210
   noIconLeftPosition: -20
+--- !u!114 &1810832408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810832405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd049071dfa94252a5381a7b893a1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticketTexture: {fileID: 2800000, guid: b2afca543878e498bb3e7e95af7b4d65, type: 3}
+  goldTexture: {fileID: 2800000, guid: 08086c822851b4bde87d304e0a772540, type: 3}
+  initialTickets: 20
+  initialGold: 5000
+--- !u!114 &1810832409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810832405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05686b2457d174748978160bc6bbde83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootDocument: {fileID: 1929517631}
 --- !u!1 &1929517629
 GameObject:
   m_ObjectHideFlags: 0

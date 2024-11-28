@@ -33,11 +33,7 @@ public struct ItemShop
 public class ItemShopController : MonoBehaviour
 {
     #region INSPECTOR VARS
-    [Header("UI DOCUMENT")]
-    [Tooltip("The root UI document of the menu itself")]
-    [SerializeField] UIDocument rootDocument;
-
-    [Space(10)][Header("SHOP ITEMS")]
+    [Header("SHOP ITEMS")]
     [Tooltip("All the items that will be displayed on the shop menu")]
     [SerializeField] private ItemShop[] shopItems;
 
@@ -68,12 +64,16 @@ public class ItemShopController : MonoBehaviour
 
     // root element
     private VisualElement rootElement;
+
+    // scripts
+    private EssentialUIController essentialUIController;
     #endregion
 
     #region UNITY METHODS
     private void Start()
     {
-        rootElement = rootDocument.rootVisualElement;
+        essentialUIController = GetComponent<EssentialUIController>();
+        rootElement = essentialUIController.RootDocument.rootVisualElement;
         SetAllItems();
     }
 
@@ -216,8 +216,13 @@ public class ItemShopController : MonoBehaviour
             timeLabel.text = formattedTime;
         }
     }
+    #endregion
 
     #region AUX METHODS
+    /// <summary>Get the item container for the specific item index</summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
     private VisualElement GetShopItemElement(int index)
     {
         var item = VisualElementHelper.GetVisualElement<VisualElement>(rootElement, $"{itemPrefix}{index}");
@@ -228,7 +233,6 @@ public class ItemShopController : MonoBehaviour
 
         return item;
     }
-    #endregion
     #endregion
     #endregion
 }
