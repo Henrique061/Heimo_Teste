@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/ItemRarityWithTxt.uss?fileID=7433441132597879392&amp;guid=31a4f2f89de6045f8ae6b460f7a09a39&amp;type=3#ItemRarityWithTxt" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
+    <engine:VisualElement name="Container" class="itemRarity">
+        <engine:Label text="Label" name="txt_Rarity" class="centerLabel centerWhiteLabel" />
+    </engine:VisualElement>
+</engine:UXML>

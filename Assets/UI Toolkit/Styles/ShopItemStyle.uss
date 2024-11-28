@@ -1,0 +1,19 @@
+.shopItem {
+    background-color: rgb(144, 144, 144);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 7px;
+    border-left-width: 4px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}

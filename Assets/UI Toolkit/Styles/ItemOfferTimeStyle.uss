@@ -1,0 +1,7 @@
+.ItemOfferTime {
+    flex-direction: row;
+    align-items: auto;
+    justify-content: center;
+    align-self: auto;
+    align-content: auto;
+}

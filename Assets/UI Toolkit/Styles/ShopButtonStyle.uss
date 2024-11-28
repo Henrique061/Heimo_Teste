@@ -1,0 +1,27 @@
+.shopButton {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    font-size: 0;
+    width: 247px;
+    height: 81px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-top-color: rgb(0, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(243, 198, 35, 0);
+    background-image: url("project://database/Assets/UI/Images/img_shopButtonBG.png?fileID=2800000&guid=d1e28ecc311804203a9e7ebafa970dc1&type=3#img_shopButtonBG");
+    white-space: normal;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}

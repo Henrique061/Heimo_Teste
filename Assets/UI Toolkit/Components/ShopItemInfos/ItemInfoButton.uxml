@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/InfoButtonStyle.uss?fileID=7433441132597879392&amp;guid=9d56e5589cced451fa75d4a27f76e504&amp;type=3#InfoButtonStyle" />
+    <engine:VisualElement name="Container" class="RoundedSquare" style="flex-grow: 1;">
+        <engine:VisualElement name="img_infoIcon" style="background-image: url(&quot;project://database/Assets/UI/Images/img_info.png?fileID=2800000&amp;guid=412c2e1d4dce946b59599f49d3f7cdf4&amp;type=3#img_info&quot;); width: 12px; height: 26.25px;" />
+    </engine:VisualElement>
+</engine:UXML>

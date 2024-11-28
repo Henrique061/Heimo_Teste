@@ -1,0 +1,21 @@
+.text {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 56px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Rajdhani/Rajdhani-Bold.ttf?fileID=12800000&guid=95186beaf749447b8a938bbfae4c4f47&type=3#Rajdhani-Bold");
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-text-outline-width: 1.7px;
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    flex-direction: column;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    scale: 1 1;
+}

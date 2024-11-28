@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="ShopButtonText" src="project://database/Assets/UI%20Toolkit/Components/ShopButton/ShopButtonText.uxml?fileID=9197481963319205126&amp;guid=6de91d01b62c940d3a2f9d2704405d9c&amp;type=3#ShopButtonText" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/ShopButtonStyle.uss?fileID=7433441132597879392&amp;guid=72a776bf62c5a4bfcaabe7e03ee00d13&amp;type=3#ShopButtonStyle" />
+    <engine:Button text="Button" name="ButtonContainer" class="shopButton">
+        <engine:Instance template="ShopButtonText" name="TextContainer" />
+        <engine:VisualElement name="EthereumIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_ethereum.png?fileID=2800000&amp;guid=6771b6840e85b40eb871cbeff57466a7&amp;type=3#img_ethereum&quot;); max-width: 50px; max-height: 50px; height: 50px; width: 50px;" />
+    </engine:Button>
+</engine:UXML>

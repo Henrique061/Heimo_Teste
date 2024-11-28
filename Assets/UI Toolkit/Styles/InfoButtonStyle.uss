@@ -1,0 +1,22 @@
+.RoundedSquare {
+    background-color: rgb(101, 101, 101);
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-top-right-radius: 11px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 3px;
+    border-left-width: 1px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 43px;
+    height: 43px;
+    max-height: 43px;
+}
