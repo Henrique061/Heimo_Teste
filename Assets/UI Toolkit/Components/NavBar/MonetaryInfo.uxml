@@ -2,12 +2,13 @@
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardCapsule.uss?fileID=7433441132597879392&amp;guid=d0d15d6babfe240d49f44517d23a71e5&amp;type=3#StandardCapsule" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/NavBarStyle.uss?fileID=7433441132597879392&amp;guid=ede6d9a8b9ba545a28dbb6f2c1b651f1&amp;type=3#NavBarStyle" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardButton.uss?fileID=7433441132597879392&amp;guid=cc1d4c0944ca24937acb08fb5dc85822&amp;type=3#StandardButton" />
     <engine:VisualElement name="Container" style="width: auto; height: auto; flex-direction: row; justify-content: flex-start; align-items: stretch; align-self: center; align-content: auto;">
         <engine:VisualElement name="background" class="commonCapsule" style="flex-grow: 1; width: 142px; max-width: 142px; margin-right: -21px; align-content: auto; align-self: auto; justify-content: flex-start; align-items: stretch; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-left: 17px;">
             <engine:VisualElement name="img_currencyIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Images/img_goldIcon.png?fileID=2800000&amp;guid=08086c822851b4bde87d304e0a772540&amp;type=3#img_goldIcon&quot;); position: relative; left: -18px; top: -11px; right: auto; bottom: auto; align-items: stretch; width: 43.5px; height: 70px; flex-direction: row;" />
             <engine:Label text="3000" name="txt_quantity" class="centerWhiteLabel" style="font-size: 36px; left: -21px; min-width: 80px;" />
         </engine:VisualElement>
-        <engine:Button text="Button" name="btn_plusIcon" class="plusCurrencyButton" style="margin-top: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-right: 0; top: -13px;">
+        <engine:Button text="Button" name="btn_plusIcon" class="plusCurrencyButton hoverAnimation stdAnimation activeAnimation" style="margin-top: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-right: 0; top: -13px;">
             <engine:Label text="+" name="txt_plus" class="centerWhiteLabel" style="font-size: 36px; -unity-text-align: middle-center; color: rgb(20, 117, 47); align-items: stretch; justify-content: center; align-self: center; align-content: stretch; height: 10px; width: 11px; margin-bottom: 0; padding-right: 0; margin-right: 0; padding-top: 0; margin-top: 0; margin-left: 0; padding-left: 0; padding-bottom: 0; bottom: -12px;" />
         </engine:Button>
     </engine:VisualElement>
