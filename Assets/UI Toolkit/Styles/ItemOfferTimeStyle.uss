@@ -5,3 +5,15 @@
     align-self: auto;
     align-content: auto;
 }
+
+.iconRotation-right {
+    background-image: url("project://database/Assets/UI/Images/img_hourGlassIcon.png?fileID=2800000&guid=69f14c369683d4687983564885fc589c&type=3#img_hourGlassIcon");
+    width: 25.11px;
+    height: 36.85px;
+    rotate: 25deg;
+    transition-duration: 0.7s;
+}
+
+.iconRotation-left {
+    rotate: -44deg;
+}

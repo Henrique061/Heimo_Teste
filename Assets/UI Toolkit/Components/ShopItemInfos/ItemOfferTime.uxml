@@ -3,7 +3,7 @@
     <Style src="project://database/Assets/UI%20Toolkit/Styles/ItemOfferTimeStyle.uss?fileID=7433441132597879392&amp;guid=ba4521ec34776460e90625431eba5be2&amp;type=3#ItemOfferTimeStyle" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
     <engine:VisualElement name="Container" class="outlinedCapsule ItemOfferTime" style="flex-grow: 1;">
-        <engine:VisualElement name="img_hourIcon" style="background-image: url(&quot;project://database/Assets/UI/Images/img_hourGlassIcon.png?fileID=2800000&amp;guid=69f14c369683d4687983564885fc589c&amp;type=3#img_hourGlassIcon&quot;); width: 25.11px; height: 36.85px;" />
+        <engine:VisualElement name="img_hourIcon" class="iconRotation-right iconRotation-left" />
         <engine:Label text="20d 9h 50m" name="txt_timer" class="centerWhiteLabel" style="font-size: 24px;" />
     </engine:VisualElement>
 </engine:UXML>

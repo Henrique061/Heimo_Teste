@@ -1,7 +1,8 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardCapsule.uss?fileID=7433441132597879392&amp;guid=d0d15d6babfe240d49f44517d23a71e5&amp;type=3#StandardCapsule" />
     <Style src="project://database/Assets/UI%20Toolkit/Styles/StandardText.uss?fileID=7433441132597879392&amp;guid=310421844d30d49e5a75546f74b3608c&amp;type=3#StandardText" />
-    <engine:VisualElement name="Container" class="shadowedCapsule" style="flex-grow: 1;">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/FreeIconStyle.uss?fileID=7433441132597879392&amp;guid=cd49b4265a44d4508aa7ee77ea63f036&amp;type=3#FreeIconStyle" />
+    <engine:VisualElement name="FreeContainer" class="shadowedCapsule iconScale-std iconScale-grow">
         <engine:Label text="FREE" class="centerWhiteLabel toolbarLabel" style="font-size: 25px; -unity-text-outline-width: 1px;" />
     </engine:VisualElement>
 </engine:UXML>

@@ -30,6 +30,7 @@ public struct ItemShop
     [HideInInspector] public DateTime CurrentOfferTime;
 }
 
+[RequireComponent(typeof(EssentialUIController))]
 public class ItemShopController : MonoBehaviour
 {
     #region INSPECTOR VARS

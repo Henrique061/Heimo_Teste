@@ -1,0 +1,9 @@
+.iconScale-std {
+    flex-grow: 1;
+    transition-duration: 1s;
+    scale: 1 1;
+}
+
+.iconScale-grow {
+    scale: 1.2 1.2;
+}
