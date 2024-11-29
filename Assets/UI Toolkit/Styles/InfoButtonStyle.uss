@@ -13,10 +13,10 @@
     border-bottom-width: 3px;
     border-left-width: 1px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     align-self: center;
     align-content: center;
     width: 43px;
     height: 43px;
-    max-height: 43px;
+    max-height: none;
 }

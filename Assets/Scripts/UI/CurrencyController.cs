@@ -13,10 +13,6 @@ public class CurrencyController : MonoBehaviour
     [SerializeField] private Texture2D ticketTexture;
     [Tooltip("The image of gold icon")]
     [SerializeField] private Texture2D goldTexture;
-
-    [Space(10)][Header("BUTTONS")]
-    [Tooltip("The audio source that will be reproduced when in the + button of currency info")]
-    [SerializeField] private AudioSource coinSound;
     #endregion
 
     #region VARS
@@ -76,7 +72,7 @@ public class CurrencyController : MonoBehaviour
     }
 
     #region EVENTS
-    private void OnClickButtonSound(ClickEvent evt) => coinSound.Play();
+    private void OnClickButtonSound(ClickEvent evt) => essentialUIController.CoinSound.Play();
 
     private void OnClickButtonEffect(CurrencyType currencyType, Label element)
     {

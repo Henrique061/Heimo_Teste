@@ -1019,7 +1019,6 @@ MonoBehaviour:
   epicWidth: 136
   legendaryWidth: 210
   noIconLeftPosition: -20
-  clickSound: {fileID: 945259630}
 --- !u!114 &1810832408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1035,7 +1034,6 @@ MonoBehaviour:
   playerController: {fileID: 1467015775}
   ticketTexture: {fileID: 2800000, guid: b2afca543878e498bb3e7e95af7b4d65, type: 3}
   goldTexture: {fileID: 2800000, guid: 08086c822851b4bde87d304e0a772540, type: 3}
-  coinSound: {fileID: 1674994875}
 --- !u!114 &1810832409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,6 +1047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rootDocument: {fileID: 1929517631}
+  clickSound: {fileID: 945259630}
+  coinSound: {fileID: 1674994875}
 --- !u!114 &1810832410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,7 +1061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8da576fd689541c6a5a2dc16f58ed32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSound: {fileID: 945259630}
 --- !u!1 &1929517629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rootDocument: {fileID: 1929517631}
+  clickSound: {fileID: 945259630}
+  coinSound: {fileID: 1674994875}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

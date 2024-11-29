@@ -4,12 +4,6 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(EssentialUIController))]
 public class NavBarController : MonoBehaviour
 {
-    #region INSPECTOR VARS
-    [Header("BUTTONS")]
-    [Tooltip("The audio source that will be reproduced when clicking a button")]
-    [SerializeField] private AudioSource clickSound;
-    #endregion
-
     #region VARS
     // elements names
     private readonly string backButtonName = "btn_backButton";
@@ -45,6 +39,6 @@ public class NavBarController : MonoBehaviour
     #endregion
 
     #region EVENTS
-    private void OnClickButton(ClickEvent evt) => clickSound.Play();
+    private void OnClickButton(ClickEvent evt) => essentialUIController.ClickSound.Play();
     #endregion
 }

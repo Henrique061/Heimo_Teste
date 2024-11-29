@@ -49,10 +49,6 @@ public class ItemShopController : MonoBehaviour
     [SerializeField][Range(100, 210)] private float legendaryWidth = 210f;
     [Tooltip("The position on left of the rarity text if there's no icon in it")]
     [SerializeField] private float noIconLeftPosition = 0f;
-
-    [Space(10)][Header("BUTTONS")]
-    [Tooltip("The audio source that will be reproduced when clicking a button")]
-    [SerializeField] private AudioSource clickSound;
     #endregion
 
     #region VARS
@@ -63,7 +59,7 @@ public class ItemShopController : MonoBehaviour
     private readonly string rarityContainerName = "RarityContainer";
     private readonly string rarityIconName = "img_RarityIcon";
     private readonly string rarityLabelName = "txt_RarityLabel";
-    private readonly string infoContainerName = "InfoContainer";
+    private readonly string infoButtonName = "InfoButton";
     private readonly string offerTimeName = "txt_timer";
     private readonly string itemPriceName = "txt_price";
     private readonly string buyButtonName = "BuyButtonContainer";
@@ -119,7 +115,7 @@ public class ItemShopController : MonoBehaviour
             var image           = VisualElementHelper.GetVisualElement<VisualElement>(item, imageItemName);
             var rarityContainer = VisualElementHelper.GetVisualElement<VisualElement>(item, rarityContainerName);
             var rarityIcon      = VisualElementHelper.GetVisualElement<VisualElement>(item, rarityIconName);
-            var infoContainer   = VisualElementHelper.GetVisualElement<VisualElement>(item, infoContainerName);
+            var infoButton   = VisualElementHelper.GetVisualElement<VisualElement>(item, infoButtonName);
             var buyButton       = VisualElementHelper.GetVisualElement<VisualElement>(item, buyButtonName);
             var rarityLabel     = VisualElementHelper.GetVisualElement<Label>(item, rarityLabelName);
             var priceLabel      = VisualElementHelper.GetVisualElement<Label>(item, itemPriceName);
@@ -129,7 +125,7 @@ public class ItemShopController : MonoBehaviour
             image.style.backgroundImage = shopItems[i].CarImage;
             rarityContainer.style.width = GetRarityWidth(rarity);
             rarityIcon.style.unityBackgroundImageTintColor = GetRarityIconColor(rarity);
-            infoContainer.style.backgroundColor = shopItems[i].InfoColor;
+            infoButton.style.backgroundColor = shopItems[i].InfoColor;
             rarityLabel.text = GetRarityName(rarity);
             priceLabel.text = shopItems[i].Price.ToString();
 
@@ -139,6 +135,7 @@ public class ItemShopController : MonoBehaviour
 
             // assign button click event
             buyButton.RegisterCallback<ClickEvent>(OnClickButton);
+            infoButton.RegisterCallback<ClickEvent>(OnClickButton);
         }
     }
 
@@ -229,7 +226,7 @@ public class ItemShopController : MonoBehaviour
     #endregion
 
     #region EVENTS
-    private void OnClickButton(ClickEvent evt) => clickSound.Play();
+    private void OnClickButton(ClickEvent evt) => essentialUIController.ClickSound.Play();
     #endregion
 
     #region AUX METHODS

@@ -25,3 +25,8 @@
     transition-timing-function: ease-out-back;
     scale: 0.8 0.8;
 }
+
+.stdAnimation {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-back;
+}
