@@ -12,10 +12,11 @@
     border-right-width: 4px;
     border-bottom-width: 7px;
     border-left-width: 4px;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     align-self: center;
     align-content: center;
+    max-height: 588px;
 }
 
 .itemGlow-0deg {
