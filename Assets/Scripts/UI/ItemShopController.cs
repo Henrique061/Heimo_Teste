@@ -49,6 +49,10 @@ public class ItemShopController : MonoBehaviour
     [SerializeField][Range(100, 210)] private float legendaryWidth = 210f;
     [Tooltip("The position on left of the rarity text if there's no icon in it")]
     [SerializeField] private float noIconLeftPosition = 0f;
+
+    [Space(10)][Header("BUTTONS")]
+    [Tooltip("The audio source that will be reproduced when clicking a button")]
+    [SerializeField] private AudioSource clickSound;
     #endregion
 
     #region VARS
@@ -62,6 +66,7 @@ public class ItemShopController : MonoBehaviour
     private readonly string infoContainerName = "InfoContainer";
     private readonly string offerTimeName = "txt_timer";
     private readonly string itemPriceName = "txt_price";
+    private readonly string buyButtonName = "BuyButtonContainer";
 
     // root element
     private VisualElement rootElement;
@@ -115,6 +120,7 @@ public class ItemShopController : MonoBehaviour
             var rarityContainer = VisualElementHelper.GetVisualElement<VisualElement>(item, rarityContainerName);
             var rarityIcon      = VisualElementHelper.GetVisualElement<VisualElement>(item, rarityIconName);
             var infoContainer   = VisualElementHelper.GetVisualElement<VisualElement>(item, infoContainerName);
+            var buyButton       = VisualElementHelper.GetVisualElement<VisualElement>(item, buyButtonName);
             var rarityLabel     = VisualElementHelper.GetVisualElement<Label>(item, rarityLabelName);
             var priceLabel      = VisualElementHelper.GetVisualElement<Label>(item, itemPriceName);
 
@@ -130,6 +136,9 @@ public class ItemShopController : MonoBehaviour
             // reposition rarity label if there's no icon for it
             if (rarity == ItemShopRarity.Common || rarity == ItemShopRarity.Rare)
                 rarityLabel.style.left = noIconLeftPosition;
+
+            // assign button click event
+            buyButton.RegisterCallback<ClickEvent>(OnClickButton);
         }
     }
 
@@ -217,6 +226,10 @@ public class ItemShopController : MonoBehaviour
             timeLabel.text = formattedTime;
         }
     }
+    #endregion
+
+    #region EVENTS
+    private void OnClickButton(ClickEvent evt) => clickSound.Play();
     #endregion
 
     #region AUX METHODS

@@ -5,17 +5,18 @@ using UnityEngine.UIElements;
 public class CurrencyController : MonoBehaviour
 {
     #region INSPECTOR VARS
-    [Header("IMAGES")]
+    [Header("PLAYER CONTROLLER")]
+    [SerializeField] private PlayerCurrencyController playerController;
+
+    [Space(10)][Header("IMAGES")]
     [Tooltip("The image of ticket icon")]
     [SerializeField] private Texture2D ticketTexture;
     [Tooltip("The image of gold icon")]
     [SerializeField] private Texture2D goldTexture;
 
-    [Space(10)][Header("INITIAL QUANTITY")]
-    [Tooltip("The quantity of tickets that player will initialize")]
-    [SerializeField][Range(0, 9999)] private int initialTickets;
-    [Tooltip("The quantity of gold that player will initialize")]
-    [SerializeField][Range(0, 9999)] private int initialGold;
+    [Space(10)][Header("BUTTONS")]
+    [Tooltip("The audio source that will be reproduced when in the + button of currency info")]
+    [SerializeField] private AudioSource coinSound;
     #endregion
 
     #region VARS
@@ -24,6 +25,7 @@ public class CurrencyController : MonoBehaviour
     private readonly string ticketContainerName = "TicketContainer";
     private readonly string currencyQuantityName = "txt_quantity";
     private readonly string currencyImageName = "img_currencyIcon";
+    private readonly string currencyPlusButtonName = "btn_plusIcon";
 
     // references
     private EssentialUIController essentialUIController;
@@ -52,17 +54,39 @@ public class CurrencyController : MonoBehaviour
         var goldLabel = VisualElementHelper.GetVisualElement<Label>(goldContainer, currencyQuantityName);
         var ticketLabel = VisualElementHelper.GetVisualElement<Label>(ticketContainer, currencyQuantityName);
 
-        // visuals
-        var goldImage = VisualElementHelper.GetVisualElement<VisualElement>(goldContainer, currencyImageName);
+        // elements
+        var goldImage   = VisualElementHelper.GetVisualElement<VisualElement>(goldContainer, currencyImageName);
+        var goldPlus    = VisualElementHelper.GetVisualElement<VisualElement>(goldContainer, currencyPlusButtonName);
         var ticketImage = VisualElementHelper.GetVisualElement<VisualElement>(ticketContainer, currencyImageName);
+        var ticketPlus  = VisualElementHelper.GetVisualElement<VisualElement>(ticketContainer, currencyPlusButtonName);
 
         // set texts
-        goldLabel.text = initialGold.ToString();
-        ticketLabel.text = initialTickets.ToString();
+        goldLabel.text = playerController.Gold.ToString();
+        ticketLabel.text = playerController.Tickets.ToString();
 
         // set textures
         goldImage.style.backgroundImage = goldTexture;
         ticketImage.style.backgroundImage = ticketTexture;
+
+        // set click events
+        goldPlus.RegisterCallback<ClickEvent>(OnClickButtonSound);
+        goldPlus.RegisterCallback<ClickEvent>(evt => OnClickButtonEffect(CurrencyType.Gold, goldLabel));
+        ticketPlus.RegisterCallback<ClickEvent>(OnClickButtonSound);
+        ticketPlus.RegisterCallback<ClickEvent>(evt => OnClickButtonEffect(CurrencyType.Ticket, ticketLabel));
     }
+
+    #region EVENTS
+    private void OnClickButtonSound(ClickEvent evt) => coinSound.Play();
+
+    private void OnClickButtonEffect(CurrencyType currencyType, Label element)
+    {
+        playerController.IncrementCurrency(currencyType);
+
+        var isGold = currencyType == CurrencyType.Gold;
+        var value = isGold ? playerController.Gold : playerController.Tickets;
+
+        element.text = value.ToString();
+    }
+    #endregion
     #endregion
 }

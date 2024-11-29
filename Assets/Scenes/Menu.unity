@@ -572,6 +572,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1051114839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051114840}
+  m_Layer: 0
+  m_Name: CONTROLLERS ---------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051114840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051114839}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1467015774}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1127462081
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +638,52 @@ Transform:
   - {fileID: 1674994874}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1467015773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467015774}
+  - component: {fileID: 1467015775}
+  m_Layer: 0
+  m_Name: PlayerController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467015774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467015773}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1051114840}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467015775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467015773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd4e964219634c169ef47ea45a3e7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialTickets: 20
+  initialGold: 5000
 --- !u!1 &1656481694
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +954,7 @@ GameObject:
   - component: {fileID: 1810832409}
   - component: {fileID: 1810832407}
   - component: {fileID: 1810832408}
+  - component: {fileID: 1810832410}
   m_Layer: 0
   m_Name: UIControllers
   m_TagString: Untagged
@@ -940,6 +1019,7 @@ MonoBehaviour:
   epicWidth: 136
   legendaryWidth: 210
   noIconLeftPosition: -20
+  clickSound: {fileID: 945259630}
 --- !u!114 &1810832408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,10 +1032,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd049071dfa94252a5381a7b893a1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1467015775}
   ticketTexture: {fileID: 2800000, guid: b2afca543878e498bb3e7e95af7b4d65, type: 3}
   goldTexture: {fileID: 2800000, guid: 08086c822851b4bde87d304e0a772540, type: 3}
-  initialTickets: 20
-  initialGold: 5000
+  coinSound: {fileID: 1674994875}
 --- !u!114 &1810832409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,6 +1049,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rootDocument: {fileID: 1929517631}
+--- !u!114 &1810832410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810832405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8da576fd689541c6a5a2dc16f58ed32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 945259630}
 --- !u!1 &1929517629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,3 +1226,4 @@ SceneRoots:
   - {fileID: 43163062}
   - {fileID: 251814201}
   - {fileID: 1127462082}
+  - {fileID: 1051114840}
